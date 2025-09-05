@@ -1,91 +1,94 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
-  accentColor: "#1d4ed8",
+  name: "George Patrick Salva",
+  title: "Senior Hardware Engineer",
+  description: "Computer Engineer | Hardware Systems & Embedded Design | Passion for building and optimizing technology",
+  accentColor: "rgba(4, 25, 82, 1)",
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "salvageorgepatricktan@gmail.com",
+    linkedin: "https://www.linkedin.com/in/george-patrick-salva-112896382/",
+    twitter: "https://x.com/extrageos",
+    github: "https://github.com/extrageos",
   },
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "I am a Computer Engineer with a strong interest in computer hardware, system design, and the intersection of electronics and computing. My focus is on understanding how hardware and software work together, from low-level circuits to fully integrated systems. I enjoy working on hardware design, troubleshooting, and optimization, while continuously expanding my knowledge in embedded systems, digital logic, and microcontroller-based projects. Driven by curiosity and hands-on problem solving, I aim to contribute to building reliable, efficient, and innovative hardware solutions.",
+  skills: [
+      {
+        name: 'Embedded Systems Development',
+        description:
+          'Experience in designing and programming microcontroller-based systems, integrating sensors, actuators, and communication modules to create reliable hardware solutions.',
+      },
+      {
+        name: 'Digital Logic Design',
+        description: 'Knowledge of logic gates, combinational/sequential circuits, and FPGA development using Verilog/VHDL for implementing hardware-level designs and system simulations.',
+      },
+      {
+        name: 'Circuit Design & Troubleshooting',
+        description:
+          'Ability to design, analyze, and debug analog and digital circuits using simulation tools and hands-on testing with multimeters, oscilloscopes, and logic analyzers.',
+      },
+      {
+        name: 'Hardware-Software Integration',
+        description: 'Skilled in bridging hardware components with software through driver development, serial communication, and system-level optimization for efficient performance.'
+      },
+      {
+        name: 'Computer Architecture & Hardware Fundamentals',
+        description: 'Understanding of CPU design, memory organization, and I/O systems, with the ability to apply concepts in real-world hardware projects and performance analysis.'
+      },
+    ],
   projects: [
-    {
-      name: "AI Dev Roundup Newsletter",
-      description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
-    },
-    {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
-      description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
-    },
-    {
-      name: "ExtensionKit",
-      description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
-    },
-  ],
+      {
+        name: 'Modular PC Hardware Monitor',
+        description:
+          'A hardware-based monitoring system that tracks real-time temperature, voltage, and fan speeds of a computer. Built with microcontrollers and sensors, the system displays live data on a small LCD and logs values to a connected PC for analysis. Designed for hardware enthusiasts who want an independent monitoring solution without relying solely on software tools.',
+      },
+      {
+        name: 'Smart Power Strip with Load Management',
+        description:
+          'A custom-built power strip with integrated microcontrollers that measures current draw per outlet and prevents overloads. Features include surge protection, per-outlet switching, and USB charging with intelligent power allocation. The device can be configured via simple serial commands or a companion app, bridging hardware safety with smart control.',
+      },
+      {
+        name: 'FPGA-Based Retro Console Emulator',
+        description:
+          'A hardware implementation of a retro gaming console using an FPGA. The project recreates the original console’s CPU, memory, and graphics pipeline in Verilog/VHDL, allowing classic games to run on real hardware. Demonstrates skills in digital logic design, hardware description languages, and system-level hardware engineering.',
+      },
+    ],
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      company: "Integrated Micro-Electronics, Inc. (IMI)",
+      title: "Hardware / Process Development Engineer",
+      dateRange: "2026 – 2028",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
+        "Assisted in hardware design and manufacturing process improvements for semiconductor assembly and testing operations.",
+        "Collaborated on reliability testing, failure analysis, and new product introduction efforts to support EMS clients.",
+        "Gained experience in PCB assembly, test calibration, and process documentation.",
       ],
     },
     {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
+      company: "SFA Semicon Philippines Corporation",
+      title: "Semiconductor Packaging & Assembly Engineer",
+      dateRange: "2028 – 2030",
       bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
+        "Supported packaging design and parametric testing for memory chips and power semiconductors.",
+        "Developed and executed test plans for package reliability and electrical performance.",
+        "Collaborated with product team to define technicCoordinated with process engineers for validation and quality assurance documentation.al requirements",
       ],
     },
     {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
+      company: "Amkor Technology Philippines, Inc.",
+      title: "Test Development Engineer",
+      dateRange: "2030 – 2033",
       bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
+        "SDesigned and optimized test programs for advanced semiconductor packages (BGA, flip-chip, SiP).",
+        "Automated test systems to improve throughput and reliability of final product validation.",
+        "Collaborated with global engineering teams to implement scalable test solutions.",
       ],
     },
   ],
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
-      achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
-      ],
-    },
-    {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
+      school: "Marinduque State University",
+      degree: "Bachelor of Science in Computer Engineering",
+      dateRange: "2021 - 2026",
       ],
     },
   ],
