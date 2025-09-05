@@ -10,6 +10,10 @@ export const siteConfig = {
     twitter: "https://x.com/extrageos",
     github: "https://github.com/extrageos",
   },
+  resume: {
+    link: "https://example.com/GeorgePatrickSalva_CV.pdf", // 🔗 replace with your actual CV link
+    fileName: "GeorgePatrickSalva_CV.pdf", // optional - for download naming
+  },
   aboutMe:
     "I am a Computer Engineer with a strong interest in computer hardware, system design, and the intersection of electronics and computing. My focus is on understanding how hardware and software work together, from low-level circuits to fully integrated systems. I enjoy working on hardware design, troubleshooting, and optimization, while continuously expanding my knowledge in embedded systems, digital logic, and microcontroller-based projects. Driven by curiosity and hands-on problem solving, I aim to contribute to building reliable, efficient, and innovative hardware solutions.",
   skills: [
