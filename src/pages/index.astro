@@ -1,39 +1,78 @@
 ---
-import Header from "../components/Header.astro";
-import Hero from "../components/Hero.astro";
-import About from "../components/About.astro";
-import Projects from "../components/Projects.astro";
-import Experience from "../components/Experience.astro";
-import Education from "../components/Education.astro";
-import Footer from "../components/Footer.astro";
-import { siteConfig } from "../config";
-import "../styles/global.css";
+import siteConfig from "../config";
 ---
 
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="description" content={siteConfig.description} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <title>{siteConfig.name} - {siteConfig.title}</title>
+    <meta charset="UTF-8" />
+    <title>{siteConfig.name} | {siteConfig.title}</title>
   </head>
   <body>
-    <Header />
+    <h1>{siteConfig.name}</h1>
+    <h2>{siteConfig.title}</h2>
+    <p>{siteConfig.description}</p>
+
     <section>
-      <Hero />
-      <About />
-      <Projects />
-      <Experience />
-      <Education />
+      <h2>About Me</h2>
+      <p>{siteConfig.aboutMe}</p>
     </section>
-    <Footer />
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        {(siteConfig.skills ?? []).map(skill => (
+          <li>
+            <strong>{skill.name}</strong>: {skill.description}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        {(siteConfig.projects ?? []).map(project => (
+          <li>
+            <strong>{project.name}</strong>: {project.description}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      {(siteConfig.experience ?? []).map(exp => (
+        <div>
+          <h3>{exp.company}</h3>
+          <p><em>{exp.title}</em> ({exp.dateRange})</p>
+          <ul>
+            {(exp.bullets ?? []).map(bullet => (
+              <li>{bullet}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      {(siteConfig.education ?? []).map(edu => (
+        <div>
+          <h3>{edu.school}</h3>
+          <p>{edu.degree}</p>
+          <p>{edu.dateRange}</p>
+        </div>
+      ))}
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: <a href={`mailto:${siteConfig.social.email}`}>{siteConfig.social.email}</a></li>
+        <li><a href={siteConfig.social.linkedin}>LinkedIn</a></li>
+        <li><a href={siteConfig.social.twitter}>Twitter</a></li>
+        <li><a href={siteConfig.social.github}>GitHub</a></li>
+      </ul>
+    </section>
   </body>
 </html>
